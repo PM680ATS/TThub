@@ -1,14 +1,8 @@
-export const mockUsers = [
-  {
-    id: 1,
-    username: "tenant1",
-    password: "password123",
-    name: "John Doe",
-  },
-];
+export const mockUser = {
+  email: "tenant@example.com",
+  password: "password123",
+};
 
-export function authenticate(username: string, password: string) {
-  return mockUsers.find(
-    (user) => user.username === username && user.password === password
-  );
+export function authenticate(email: string, password: string): boolean {
+  return email === mockUser.email && password === mockUser.password;
 }

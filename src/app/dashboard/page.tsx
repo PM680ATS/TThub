@@ -1,8 +1,12 @@
-export default function Dashboard() {
+export default function DashboardPage() {
   return (
-    <div style={{ padding: '50px' }}>
-      <h1>Welcome to ATSTenantHub Dashboard!</h1>
-      <p>You have successfully logged in.</p>
+    <div>
+      <h1>Tenant Dashboard</h1>
+      <p>Welcome! Here you'll see alerts, maintenance status, and updates.</p>
+      <ul>
+        <li>📢 New alert: Water shutoff at 10AM tomorrow.</li>
+        <li>🛠 Maintenance request #204 is in progress.</li>
+      </ul>
     </div>
   );
 }
